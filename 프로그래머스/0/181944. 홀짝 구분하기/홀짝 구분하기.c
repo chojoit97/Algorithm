@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//삼항연산자로 해보자.
 int main(void) {
     int a;
     
