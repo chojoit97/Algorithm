@@ -48,11 +48,11 @@ char* solution(const char* str1, const char* str2) {
     if(answer == NULL) return NULL;
     
     
-    
+    int idx = 0;
     for(int i = 0; i< str1_len; i++){
         
-        answer[i * 2] = str1[i];
-        answer[i * 2 + 1] = str2[i];
+        answer[idx++] = str1[i];   // str1의 문자 삽입
+        answer[idx++] = str2[i];   // str2의 문자 삽입
        
     }
     answer[str_len] = '\0';  // 문자열 끝에 널문자 추가
